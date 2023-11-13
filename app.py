@@ -5,12 +5,13 @@ import streamlit as st
 def load_data():
     return pd.read_csv('data/processed/bikes_completed.csv')
 
-def = load_data()
+def main():
+     def = load_data()
 
-st.dataframe(df)
+    st.dataframe(df)
 
-
-
+if __name__ == '__main__':
+    main()
 
 
 
