@@ -3,7 +3,7 @@ from src.extraction import load_data
 
 st.set_page_config(layout='wide')
 
-ef create_dataframe_section(df):
+def create_dataframe_section(df):
     st.title("Database Section")
 
     col_1, col_2 = st.columns(2)
@@ -60,9 +60,13 @@ def create_answers_section(df):
     return None
 
 def main():
-     def_raw = load_data()
+     df = load_data()
 
-     st.dataframe(df_raw )
+     create_dataframe_section(df)
+
+     create_answers_section(df)
+
+     st.dataframe(df)
 
 if __name__ == '__main__':
     main()
