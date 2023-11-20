@@ -59,7 +59,6 @@ def create_answers_section(df):
     
     return None
 
-
 def main():
      def_raw = load_data()
 
